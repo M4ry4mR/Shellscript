@@ -1,13 +1,17 @@
 #!/bin/bash
 #
 #
-#
+max=0
+min=0
 for((i=0 ; i<6 ; i++)); do
 read -p "enter numbers" n 
 
-
- max=0
- min=999
+ if [ $i -eq 0 ];
+ then 
+	 max=$n
+	 min=$n
+ fi
+ 
  if [ $n -gt $max ]; then
 	 max=$n
 	 
