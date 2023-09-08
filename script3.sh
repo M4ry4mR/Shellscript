@@ -1,11 +1,16 @@
 #!/bin/bash
 # 1
 # 23
-# 45
+# 456
 # 78910
 #
-for((i=1; i<11; i++)); do 
-	for((j=i; j<i+1; j++)); do
-		echo "$j"
+#
+#
+n=1
+for((i=1; i<=4; i++)); do 
+	for((j=1; j<=$i; j++)); do
+		echo -n "$n"
+		n=$((n+1))
 	done
+	echo
 done
